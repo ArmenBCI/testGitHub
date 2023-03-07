@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     var dotIsPlaced: Bool = false
     var firstOperation: Double = 0
     var secoundOperation: Double = 0
+    
+    
+    
     var Arm: String = ""
     var ketadrakanner: String = ""
     var carrentInput: Double {
@@ -41,7 +44,7 @@ class ViewController: UIViewController {
     
     @IBAction func ketBotton(_ sender: UIButton) {
         if stillTyping && !dotIsPlaced {
-            label.text = label.text + "."
+            label.text = label.text! + "."
             dotIsPlaced = true
         }
     }
